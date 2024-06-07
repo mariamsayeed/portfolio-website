@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply bg-gradient-to-l from-gray-700 via-gray-900 to-black
+}
+
+@keyframes laser {
+  0% { box-shadow: 0 0 5px #32CD32, 0 0 25px #32CD32, 0 0 50px #32CD32, 0 0 200px #32CD32; }
+  40% { box-shadow: 0 0 5px #32CD32, 0 0 25px #32CD32, 0 0 50px #32CD32, 0 0 200px #32CD32; }
+  60% { box-shadow: 0 0 5px #32CD32, 0 0 10px #32CD32, 0 0 10px #32CD32, 0 0 10px #32CD32; }
+  100% { box-shadow: 0 0 5px #32CD32, 0 0 25px #32CD32, 0 0 50px #32CD32, 0 0 200px #32CD32; }
+}
+
+.laser:hover {
+  animation: laser 1s infinite;
+}
